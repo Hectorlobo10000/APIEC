@@ -1,3 +1,5 @@
+'use strict';
+
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 const  themeRoutes = require('./routes/theme.route');
@@ -17,8 +19,9 @@ mongoose.connection.on('error', (err) => {
     console.log('Error while connecting to mongoDB', err);
 });
 
+var Port = normalizePort(process.env.PORT || 3000)
 server.connection({
-    port:3000,
+    port: Port,
     host: 'localhost'
 });
 
