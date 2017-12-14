@@ -1,3 +1,5 @@
+'use strict';
+
 const ThemeController = require('../controllers/theme.controller');
 module.exports = [
     {

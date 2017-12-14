@@ -1,3 +1,5 @@
+'use strict';
+
 const Theme = require('../models/theme.model');
 
 module.exports = {
