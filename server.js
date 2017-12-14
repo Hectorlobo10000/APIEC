@@ -19,9 +19,8 @@ mongoose.connection.on('error', (err) => {
     console.log('Error while connecting to mongoDB', err);
 });
 
-var Port = normalizePort(process.env.PORT || 3000)
 server.connection({
-    port: Port,
+    port: 3000,
     host: 'localhost'
 });
 
