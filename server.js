@@ -21,7 +21,10 @@ mongoose.connection.on('error', (err) => {
 
 server.connection({
     port: process.env.PORT,
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    routes: {
+        cors: true
+    }
 });
 
 server.route({
