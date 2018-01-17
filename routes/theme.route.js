@@ -4,7 +4,7 @@ const ThemeController = require('../controllers/theme.controller');
 module.exports = [
     {
         method:'GET',
-        path:'/api/chapter/{idChapter}/theme/{idTheme}',
+        path:'/api/chapter/{idChapter}',
         handler: ThemeController.findOne
     }
 ];
