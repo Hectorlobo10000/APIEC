@@ -3,9 +3,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const ThemeSchema = new Schema({},
-{
+const ChapterOneScheme = new Schema({}, {
     collection: 'Chapter_1'
 });
 
-module.exports = mongoose.model('Theme', ThemeSchema);
+module.exports = mongoose.model('ChapterOneModel', ChapterOneScheme);
