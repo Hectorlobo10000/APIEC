@@ -10,7 +10,7 @@ module.exports = [
         handler: ChapterOne.find
     },
     {
-    	method: 'GET' ,
+    	method: 'GET',
     	path: 'api/chapter/2',
     	handler: ChapterTwo.find
     }
