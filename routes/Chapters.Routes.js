@@ -11,7 +11,7 @@ module.exports = [
     },
     {
     	method: 'GET',
-    	path: 'api/chapter/2',
+    	path: '/api/chapter/2',
     	handler: ChapterTwo.find
     }
 ];
