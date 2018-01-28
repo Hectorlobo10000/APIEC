@@ -1,10 +1,11 @@
 'use strict';
 
-const ThemeController = require('../controllers/theme.controller');
+const ChapterOne = require('../controllers/ChapterOne.Controller');
+
 module.exports = [
     {
         method:'GET',
         path:'/api/chapter/{idChapter}',
-        handler: ThemeController.findOne
+        handler: ChapterOne.findOne
     }
 ];

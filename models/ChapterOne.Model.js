@@ -3,13 +3,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const ThemeSchema = new Schema({
-    id: Schema.Types.ObjectId,
-    chapter: Number,
-    themeId: Number,
-    theme: String,
-    paragraphs: Schema.Types.Array
-},{
+const ThemeSchema = new Schema({},
+{
     collection: 'Chapter_1'
 });
 

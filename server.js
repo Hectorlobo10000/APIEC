@@ -2,7 +2,7 @@
 
 const Hapi = require('hapi');
 const server = new Hapi.Server();
-const  themeRoutes = require('./routes/theme.route');
+const  chaptersRoutes = require('./routes/Chapters.Routes');
 
 const mongoose = require('mongoose');
 
@@ -35,7 +35,7 @@ server.route({
     }
 });
 
-server.route(themeRoutes);
+server.route(chaptersRoutes);
 
 server.start((err) => {
     if(err){
