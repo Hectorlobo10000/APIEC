@@ -11,7 +11,7 @@ module.exports = [
     },
     {
         method: 'GET',
-        path: '/api/chapter/1/theme/:idTheme'
+        path: '/api/chapter/1/theme/{idTheme}',
         handler: ChapterOne.find
     }
 ];
