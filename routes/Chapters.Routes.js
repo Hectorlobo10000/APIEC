@@ -6,7 +6,7 @@ const ChapterTwo = require('../controllers/ChapterTwo.Controller');
 module.exports = [
     {
     	method: 'GET',
-    	path: '/api/chapter/2',
+    	path: '/api/chapter/2/theme/{idTheme}',
     	handler: ChapterTwo.find
     },
     {
